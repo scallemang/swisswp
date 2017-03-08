@@ -1,0 +1,6 @@
+footer {
+	@include grid-container();
+	div.site-info {
+		@include grid-column(12);
+	}
+}

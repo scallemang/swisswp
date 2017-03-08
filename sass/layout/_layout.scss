@@ -1,0 +1,18 @@
+#content {
+	@include grid-container;
+	#primary {
+		@include grid-column(12);
+		@media (min-width: $tablet) {
+			@include grid-column(8);
+			@include grid-push(4)
+		}
+	}
+	#secondary {
+		@include grid-column(12);
+		@media (min-width: $tablet) {
+			@include grid-column(4);
+			@include grid-push(-12)
+		}
+		@include grid-column(4);
+	}
+}
